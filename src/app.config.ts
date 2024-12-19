@@ -114,8 +114,8 @@ new AppConfig()
   .setServiceVersion(RAW_ENV_VARIABLES.APP_VERSION)
   .setDatabaseOptions({
     user: RAW_ENV_VARIABLES.USER,
-    password: RAW_ENV_VARIABLES.PASSWORD,
-    endpoint: RAW_ENV_VARIABLES.ENDPOINT,
+    password: 'admin-0!',//RAW_ENV_VARIABLES.PASSWORD,
+    endpoint: 'shop-db.c74acsiqubuk.eu-central-1.rds.amazonaws.com',//RAW_ENV_VARIABLES.ENDPOINT,
     dbPort: parseInt(RAW_ENV_VARIABLES.DB_PORT),
     tableSchemaAutoupdate: RAW_ENV_VARIABLES.TABLE_SCHEMA_AUTOUPDATE === 'true',
     dbName: RAW_ENV_VARIABLES.DATABASE_NAME,
